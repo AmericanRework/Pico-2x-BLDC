@@ -23,6 +23,9 @@ Boards require SMD paste soldering and normal soldering to build:
 - Normal Soldering: in particular the mosfets. They are TO-220 because you are a hacker. You can solder in mosfets you have laying around and then de-solder them yourself to put better ones in. Or put in 3x0.1" pin headers so you can just plug in mosfets when you inevitably dead short them after trying to roll your own 3 phase driver. Basically you might want to 1. swap mosfets lots as you scratch write a 3phase driver. 2. use whatever mosfets are around. 3. repair it yourself. All of these would wreck a normal board but here you can just break out your trusty soldering iron and fix this board instead of throwing it in the trash!
 - Make sure you order 2oz copper board so you get thick traces and can use higher current.
 
+Assembled board:
+![plot](./AssembledPico2xBLDCAmp.jpg)
+
 If you don't want to use the A/D (or want to repurpose any other inputs/outputs after you get a board you can cut the trace to that pin, and there's a tinned hole for you to take over. And again, you don't have to build both servo amps if you want more IO's. 
 
 'Firmware' for the rp2040 has some basic configuration and setup instructions in comments at the top of the code. It's pretty well tested and has been running for days without failing on an automower. There are two other firmware versions - one example for 3x DC motors, and one old version based on (https://github.com/ClemensElflein/xESC2040/tree/main/firmware/src) that does not use simplefoc. Both 'other' firmware versions need their pins.h file checked to be sure they follow the current board pico pin assignments, but should be somewhat functional other than that afaik. Let's call them good starting points. 
@@ -30,6 +33,9 @@ If you don't want to use the A/D (or want to repurpose any other inputs/outputs 
 **Tested**
 
 Tested using velocity control and torque control up to 10A/21v. Running in a Husqvarna 450x Automower as I write this. Maybe 10 hours of operation so far. Will update if/when anything fails.
+
+2 amps, 3 motors. One board has both drive motors, one has the cut motor.
+![plot](./Installed450x.jpg)
 
 Tested with 3x brushed (non 3 phase) motors using https://github.com/simplefoc/Arduino-FOC-dcmotor  - worked great but I did not test feedback, just that it could spin the motors. Off the top of my head there's only enough pico pins for 2x quadrature encoders.
 
