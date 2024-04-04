@@ -1,5 +1,5 @@
 # DualBLDCController
-One RP2040 Pico runs 2x Brushless motor controllers! Uses SimpleFOC + Halls + TO-220 mosfets or IGBTs. Trying for low cost + lots of flexibility + solder it yourself at home + repairable. Works as a 3x DC motor controller as well.
+One RP2040 Pico drives two brushless motors! Uses SimpleFOC + Halls + TO-220 mosfets or IGBTs. Trying for low cost + lots of flexibility + solder it yourself at home + repairable. Works as a 3x DC motor controller as well.
 
 
 
