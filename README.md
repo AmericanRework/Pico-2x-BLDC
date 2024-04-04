@@ -13,7 +13,7 @@ Boards have a spot for molex plugs that are pin compatible with Husqvarna 450x a
 
 Board requires your motor power DC source, and ~12vdc@ say 50mA. The board can either make 3.3v for the RP2040 pico, or you can provide external 3.3v. 
 
-There's a very simple heartbeat signal in the code - if the amp doesn't get an instruction from serial it'll shut down. 
+There's a very simple heartbeat signal in the code - if the amp doesn't get an instruction from serial it'll shut down, or delete that line to go forever!
 
 **Assembly/Setup:**
 
