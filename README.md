@@ -5,7 +5,7 @@ One RP2040 Pico drives two brushless motors! Uses SimpleFOC + Halls + TO-220 mos
 
 **Features**
 
-RP2040 Pico running Simplefoc (https://simplefoc.com/) and using halls (or -untested but should be possible- encoders) for motor commutation. (No FOC - RP2040 doesn't have enough A/D channels for 2x motor FOC.) Current sensing: 1 A/D channel per motor. Uses 2304 half-H drivers. Can assemble only half the board if you only want one servo amp / want more pico I/O's. Spot for big diodes if you want 'em - Big motors seem to eat my mosfet body diodes rather quickly and IGBT's don't have body diodes. 
+RP2040 Pico running Simplefoc (https://simplefoc.com/) and using halls (or -untested but should be possible- encoders) for motor commutation. (No FOC - RP2040 doesn't have enough A/D channels for 2x motor FOC.) Current sensing: 1 A/D channel and shunt resistor per motor. Uses 2304 half-H drivers. Can assemble only half the board if you only want one servo amp / want more pico I/O's. Spot for big diodes if you want 'em - Big motors seem to eat my mosfet body diodes rather quickly and IGBT's don't have body diodes. 
 
 Control via usb serial or hardware serial. I2C, SPI, and software CAN might work but are untested. Serial is Human readable, following the simplefoc commander schema: AE1 enables motor, A10 sets motor A to 10 rev/sec, A0 stops motor A. AE0 quickly drops power to motor a. etc... B10 sets motor B to 10 rev/sec... etc... This allows you to control, test, and modify this servo amp right from the Arduino IDE or pretty much anything with a USB port or serial port.
 
