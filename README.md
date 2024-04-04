@@ -25,7 +25,7 @@ Boards require SMD paste soldering and normal soldering to build:
 
 If you don't want to use the A/D (or want to repurpose any other inputs/outputs after you get a board you can cut the trace to that pin, and there's a tinned hole for you to take over. And again, you don't have to build both servo amps if you want more IO's. 
 
-'Firmware' for the rp2040 has some basic configuration and setup instructions in comments at the top of the code. It's pretty well tested and has been running for days without failing on an automower. There are two other firmware versions - one example for 3x DC motors, and one old version based on (https://github.com/ClemensElflein/xESC2040/tree/main/firmware/src) that does not use simplefoc. Both 'other' firmware versions need their pins.h file checked to be sure they follow the current board pico pin assignments, but should be more or less functional other than that afaik. Let's call them good starting points. 
+'Firmware' for the rp2040 has some basic configuration and setup instructions in comments at the top of the code. It's pretty well tested and has been running for days without failing on an automower. There are two other firmware versions - one example for 3x DC motors, and one old version based on (https://github.com/ClemensElflein/xESC2040/tree/main/firmware/src) that does not use simplefoc. Both 'other' firmware versions need their pins.h file checked to be sure they follow the current board pico pin assignments, but should be somewhat functional other than that afaik. Let's call them good starting points. 
 
 **Tested**
 
