@@ -50,9 +50,9 @@ Thanks to everyone who open sources their work - makes the world a better place.
 
 **Next board iteration:**
 
--Heat sinks: Mosfet locations are not in a nice line. We've got 1 sink per mosfet, and once we start moving power we might want some real cooling here not just tiny heat sinks to air. 
--Fix the onboard 3.3v - Turns out you're not supposed to use linear regulators as DC-DC converters. Oops. It works but wastes 50mA. Leaning towards deleting it 'cause 3.3v or 5v can come from RPi or BBB or pretty much any other board you use to drive this. AND if you have external 3.3v you can dump power to the pico even if you leave the DC main power connected. Maybe a small fuse though?
--Make the power input and GND holes large enough to accommodate 12Ga wire.
--Fix various labels on the board
+- Heat sinks: Mosfet locations are not in a nice line. We've got 1 sink per mosfet, and once we start moving power we might want some real cooling here not just tiny heat sinks to air. 
+- Fix the onboard 3.3v - Turns out you're not supposed to use linear regulators as DC-DC converters. Oops. It works but wastes 50mA. Leaning towards deleting it 'cause 3.3v or 5v can come from RPi or BBB or pretty much any other board you use to drive this. AND if you have external 3.3v you can dump power to the pico even if you leave the DC main power connected. Maybe a small fuse though?
+- Make the power input and GND holes large enough to accommodate 12Ga wire.
+- Fix various labels on the board
 
 Cheers!
