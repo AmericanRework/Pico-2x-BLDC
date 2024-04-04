@@ -6,10 +6,10 @@ This is mostly example code from SimpleFOC. Follow their license.
 DO NOT PLUG PICO INTO USB WHILE IT'S INSTALLED /PLUGGED INTO BEAGLEBONE. WILL SEND POSSIBLY 5V DOWN THE BEAGLEBONE 3.3V POWER LINE.
 
 Install: 
-use Arduino ide, add packages rp2040 and simplefoc and Earle F. Philhower?
+use Arduino ide, add packages / boards:
 known working:
 Simplefoc 2.3.2, SimpleDCmotor 1.0.0 simplefocDrivers 1.0.6, board: Raspi pico rp2040 by Philhower 3.7.2
-needs Testing:
+Testing:
 SimpleDCmotor 1.0.2 simplefocDrivers 1.0.7
 
 HAD TO delete rp2040.h under current sense in the standard simplefoc library to get this pwm on rp2040 to work... 2024: No longer have to do this!
