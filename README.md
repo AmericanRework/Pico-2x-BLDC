@@ -43,12 +43,11 @@ Thanks to everyone who open sources their work - makes the world a better place.
 
 **Plans/Stuff that's broken, rough order:**
 
-- Finish this documentation. Parts list looking at you.
 - Current sense is at best not super calibrated, at worst needs work. Functions well enough to shut down the amp if current limit is hit.
 - Test both DC and BLDC motors with an encoder instead of halls.
 - Build more robots using this amp.
 - Test it up to 240vdc/10A. Should work?
-- Connect JUST the 2304's to a Mesa FPGA board running linuxCNC. Yep. dump the pico and put your own brain on this.
+- Connect JUST the 2304's to a Mesa FPGA board running linuxCNC. Yep. Dump the pico and put your own brain on these drivers.
 - I2C should work via pico pins GP17 and GP16. I think there is also now software CAN for the 2040 - loose 25% or so of one core but get CAN. Should be able to get it working.
 
 **Next board iteration:**
