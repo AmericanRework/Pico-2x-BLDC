@@ -41,12 +41,12 @@ Thanks to everyone who open sources their work - makes the world a better place.
 
 **Plans/Stuff that's broken, rough order:**
 
--Finish this documentation. Parts list looking at you.
--Current sense is at best not super calibrated, at worst needs work. Functions well enough to shut down the amp if current limit is hit.
--Test both DC and BLDC motors with an encoder instead of halls.
--Build more robots using this amp.
--Test it up to 240vdc/10A. Should work?
--Connect JUST the 2304's to a Mesa FPGA board running linuxCNC. Yep. dump the pico and put your own brain on this. 
+- Finish this documentation. Parts list looking at you.
+- Current sense is at best not super calibrated, at worst needs work. Functions well enough to shut down the amp if current limit is hit.
+- Test both DC and BLDC motors with an encoder instead of halls.
+- Build more robots using this amp.
+- Test it up to 240vdc/10A. Should work?
+- Connect JUST the 2304's to a Mesa FPGA board running linuxCNC. Yep. dump the pico and put your own brain on this. 
 
 **Next board iteration:**
 
