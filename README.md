@@ -1,5 +1,5 @@
 # DualBLDCController
-RP2040 Pico 2x Brushless motor controller! Uses SimpleFOC + Halls + TO-220 mosfets or IGBTs. Trying for low cost + lots of flexibility + solder it yourself at home + repairable. Works as a 3x DC motor controller as well.
+One RP2040 Pico runs 2x Brushless motor controllers! Uses SimpleFOC + Halls + TO-220 mosfets or IGBTs. Trying for low cost + lots of flexibility + solder it yourself at home + repairable. Works as a 3x DC motor controller as well.
 
 
 
@@ -36,6 +36,8 @@ Tested with 3x brushed (non 3 phase) motors using https://github.com/simplefoc/A
 **Thank you**
 
 Big thank you to https://github.com/ClemensElflein/ for creating the Open Mower project and his very well thought out 3 phase rp2040 servo amp code. His project inspired me to take the leap and make this happen. This board can(at least used to!) run (a version of?)his servo amp code but you have to change your pins.h, and possibly more IDK. The original idea was use the openmower framework to control this servo amp but I ended up going a different direction.
+
+SimpleFOC is absolutely brilliant. Can't recommend enough. If you are making bldc controllers they are a great place to start!
 
 Thanks to everyone who open sources their work - makes the world a better place. Hope my code helps you!
 
