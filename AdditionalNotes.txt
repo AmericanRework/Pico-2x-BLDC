@@ -1,6 +1,9 @@
 Additional documentation:
 
 
+To connect external 3.3v: use the 3.3v in / vsys pin (upper right corner of the pico if usb is top) It's labeled on the board.
+
+
 Pinout for Husqvarna Automower 450x cut motor to match the drive motor 8 pin molex (drive motor comes with a 10 pin molex but only 8 pins used): 
 
 -Plug latch on top. View looking at circuit board/back of plug:
