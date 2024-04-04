@@ -19,9 +19,9 @@ There's a very simple heartbeat signal in the code - if the amp doesn't get an i
 
 Boards require SMD paste soldering and normal soldering to build: 
 
-- SMD: It's not bad, order a solder mask when you order the board, place components, toaster oven for 3 mins. All SMD components are on the same side of the board. No Tiny SMD stuff like the rp2040 chip itself - that's why we use a pico. All diodes are NOT SMD so you can tell which direction they go. (I can never see the tiny lines) 
+- SMD: It's not bad, order a solder mask when you order the board, place components, toaster oven for 3 mins. All SMD components are on the same side of the board. No Tiny SMD stuff like the rp2040 chip itself - that's why we use a pico. All diodes are NOT SMD so you can tell which direction they go. (I can never see the tiny lines.) 
 - Normal: in particular the mosfets. They are TO-220 because you are a hacker. You can solder in mosfets you have laying around and then de-solder them yourself to put better ones in. Or put in 3x0.1" pin headers so you can just plug in mosfets when you inevitably dead short them after trying to roll your own 3 phase driver. Basically you might want to 1. swap mosfets lots as you scratch write a 3phase driver. 2. use whatever mosfets are around. 3. repair it yourself. All of these would wreck a normal board but here you can just break out your trusty soldering iron and fix this board instead of throwing it in the trash!
-- Make sure you order 2oz copper board so you get thick traces and can use higher current
+- Make sure you order 2oz copper board so you get thick traces and can use higher current.
 
 If you don't want to use the A/D (or want to repurpose any other inputs/outputs after you get a board you can cut the trace to that pin, and there's a tinned hole for you to take over. And again, you don't have to build both servo amps if you want more IO's. 
 
@@ -53,10 +53,11 @@ Thanks to everyone who open sources their work - makes the world a better place.
 
 **Next board iteration:**
 
+- Going to be a while. I've got enough of these boards for my next couple years of planned projects. Maybe...2027 or so we'll fix this stuff and anything else that shows up. Only thing that will trigger a sooner update is if high voltage doesn't work.
 - Heat sinks: Mosfet locations are not in a nice line. We've got 1 sink per mosfet, and once we start using more power we might want some real cooling here not just tiny heat sinks to air. Is it worth the pain of moving everything? Eh... Maybe. Might be easier to just machine the right pockets/holes into an aluminum block. 
 - Fix the onboard 3.3v - Turns out you're not supposed to use linear regulators as DC-DC converters. Oops. It works but wastes 40mA.+ Leaning towards deleting it 'cause 3.3v or 5v can come from RPi or BBB or pretty much any other board you use to drive this. AND if you have external 3.3v you can dump power to the pico even if you leave the DC main power connected.
 - Make the power input and GND holes large enough to accommodate 12Ga wire.
-- Fix various labels on the board
+- Fix various labels on the board. FID2 looking at you.
 
 
 Cheers!
