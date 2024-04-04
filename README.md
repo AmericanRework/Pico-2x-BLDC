@@ -31,7 +31,7 @@ If you don't want to use the A/D (or want to repurpose any other inputs/outputs 
 
 Tested using velocity control and torque control up to 10A/21v. Running in a Husqvarna 450x Automower as I write this. Maybe 10 hours of operation so far. Will update if/when anything fails.
 
-Tested with 3x brushed (non 3 phase) motors using https://github.com/simplefoc/Arduino-FOC-dcmotor  - worked great but I did not test feedback, just that it could spin the motors. Pretty sure there's only enough pins for 2x quadrature encoders.
+Tested with 3x brushed (non 3 phase) motors using https://github.com/simplefoc/Arduino-FOC-dcmotor  - worked great but I did not test feedback, just that it could spin the motors. Off the top of my head there's only enough pico pins for 2x quadrature encoders.
 
 **Thank you**
 
