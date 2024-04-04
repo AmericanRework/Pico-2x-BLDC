@@ -1,0 +1,10 @@
+Additional documentation:
+
+
+Pinout for Husqvarna Automower 450x cut motor to match the drive motor 8 pin molex (drive motor comes with a 10 pin molex but only 8 pins used): 
+
+-Plug latch on top. View looking at circuit board/back of plug:
+-First row: black-gnd, blue-U, white-V, green-W
+-Second row: red-3.3v, yellow-hallU, grey-hallV, purple-hallW
+
+Gives same electrical angle as the drive motors. Our pinout is written directly on the board to make wiring up motors easy.
