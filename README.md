@@ -19,7 +19,7 @@ There's a very simple heartbeat signal in the code - if the amp doesn't get an i
 
 Boards require SMD paste soldering and normal soldering to build: 
 
-- SMD: It's not bad, order a solder mask when you order the board, place components, toaster oven for 3 mins. All SMD components are on the same side of the board. No Tiny SMD stuff like the rp2040 chip itself. All diodes are NOT SMD so you can tell which direction they go. (I can never see the tiny lines) 
+- SMD: It's not bad, order a solder mask when you order the board, place components, toaster oven for 3 mins. All SMD components are on the same side of the board. No Tiny SMD stuff like the rp2040 chip itself - that's why we use a pico. All diodes are NOT SMD so you can tell which direction they go. (I can never see the tiny lines) 
 - Normal: in particular the mosfets. They are TO-220 because you are a hacker. You can solder in mosfets you have laying around and then de-solder them yourself to put better ones in. Or put in 3x0.1" pin headers so you can just plug in mosfets when you inevitably dead short them after trying to roll your own 3 phase driver. Basically you might want to 1. swap mosfets lots as you scratch write a 3phase driver. 2. use whatever mosfets are around. 3. repair it yourself. All of these would wreck a normal board but mean you can just break out your trusty soldering iron and fix this board instead of throwing it in the trash!
 - Make sure you order 2oz copper board so you get thick traces.
 
