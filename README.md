@@ -32,7 +32,7 @@ If you don't want to use the A/D (or want to repurpose any other inputs/outputs 
 
 **Tested**
 
-Tested using velocity control and torque control up to 10A/21v. Running in a Husqvarna 450x Automower as I write this. Maybe 10 hours of operation so far. Will update if/when anything fails.
+Tested using velocity control and torque control up to 10A/21v. You'll want heatsinks and low rdson mosfets to get to 10A. Two boards are running in a Husqvarna 450x Automower as I write this. Maybe 10 hours of operation so far. Will update if/when anything fails.
 
 2 amps, 3 motors. One board has both drive motors, one has the cut motor.
 ![plot](./Installed450x.jpg)
