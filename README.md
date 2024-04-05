@@ -41,7 +41,7 @@ Tested with 3x brushed (non 3 phase) motors using https://github.com/simplefoc/A
 
 **Thank you**
 
-Big thank you to https://github.com/ClemensElflein/ for creating the Open Mower project and his very well thought out 3 phase rp2040 servo amp code. His project inspired me to take the leap and make this happen. The original plan was use the openmower framework to control this servo amp, again - the amp plugs right into 450X automower drive motors, no hacking required. This board could(at least used to!) run (a version of?) the Xesc2040 servo amp code. Creating a firmware for this board that allows it to connect to openmower would be cool but I ended up making a non-ROS mower controller.
+Big thank you to https://github.com/ClemensElflein/ for creating the Open Mower project and his very well thought out 3 phase rp2040 servo amp code. His project inspired me to take the leap and make this happen. The original plan was use the openmower framework to control this servo amp, again - the amp plugs right into 450X automower drive motors, no hacking required. This board could(at least used to!) run (a version of?) the Xesc2040 servo amp code. Creating a firmware for this board that allows it to connect to openmower would be cool but I ended up writing a very simple mower controller instead.
 
 SimpleFOC is absolutely brilliant. Can't recommend enough. If you are making bldc controllers they are a great place to start! (https://simplefoc.com/)
 
