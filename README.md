@@ -45,6 +45,8 @@ Big thank you to https://github.com/ClemensElflein/ for creating the Open Mower 
 
 SimpleFOC is absolutely brilliant. Can't recommend enough. If you are making bldc controllers they are a great place to start! (https://simplefoc.com/)
 
+RP2040 / Pi Pico + Earle Philhower core (https://github.com/earlephilhower/arduino-pico) has been rock solid and a joy to work on. 
+
 Thanks to everyone who open sources their work - makes the world a better place. Hope my code helps you!
 
 **Plans/Stuff that's broken, rough order:**
