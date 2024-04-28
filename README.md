@@ -64,7 +64,7 @@ Thanks to everyone who open sources their work - makes the world a better place.
 
 - Going to be a while. I've got enough of these boards for my next couple years of planned projects. Maybe...2027 or so we'll fix this stuff and anything else that shows up. Only thing that will trigger a sooner update is if high voltage doesn't work.
 - Heat sinks: Mosfet locations are not in a nice line. We've got 1 sink per mosfet, and once we start using more power we might want some real cooling here not just tiny heat sinks to air. Is it worth the pain of moving everything? Eh... Maybe. Might be easier to just machine the right pockets/holes into an aluminum block. 
-- Fix the onboard 3.3v - Turns out you're not supposed to use linear regulators as DC-DC converters. Oops. It works but wastes 40mA.+ Leaning towards deleting it 'cause 3.3v or 5v can come from RPi or BBB or pretty much any other board you use to drive this. AND if you have external 3.3v you can dump power to the pico even if you leave the DC main power connected.
+- Delete the onboard 3.3v - Turns out you're not supposed to use linear regulators as DC-DC converters. Oops. It works but wastes 40mA+. Delete it 'cause 3.3v or 5v can come from RPi or BBB or pretty much any other board you use to drive this. AND if you have external 3.3v you can dump power to the pico even if you leave the DC main power connected.
 - Redo pico io mapping so that each half-H is on it's own PWM slice.
 - Motor 1 half-h cutable-traces: if you cut the top side trace between the pico and the tinned hole, remain connected to their half-h because traces went straight to the pico pins. 
 - Make the power input and GND holes large enough to accommodate 12Ga wire.
