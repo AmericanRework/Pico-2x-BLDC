@@ -59,7 +59,7 @@ Thanks to everyone who open sources their work - makes the world a better place.
 - Test it up to 240vdc/10A. Should work?
 - When you disable a moving simplefoc motor with an 'AE0', it'll try to jump back to that velocity when you re-enable it. Might be fixed in newest simplefoc version or maybe it's something I did. Low priority 'cause it just spins a wheel a bit when you re-enable. Could be much a bigger problem on say a robot arm or CNC with a hard stop.
 - Connect JUST the 2304's to a Mesa FPGA board running linuxCNC. Yep. Dump the pico and put your own brain on these drivers.
-- I2C should work via pico pins GP17 and GP16. I think there is also now software CAN for the 2040 - loose 25% or so of one core but get CAN. Should be able to get it working.
+- I2C should work via pico pins GP17 and GP16. I think there is also now software CAN for the 2040 - loose 25% or so of one core but get CAN. Should be able to get it working. SPI is also exposed on pins 16/17/18/19 but again is untested. 
 
 **Next board iteration:**
 
