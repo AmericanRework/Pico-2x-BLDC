@@ -26,7 +26,7 @@ Boards require SMD paste soldering and normal soldering to build:
 Assembled board:
 ![plot](./AssembledPico2xBLDCAmp.jpg)
 
-If you don't want to use the A/D (or want to repurpose any other inputs/outputs after you get a board you can cut the trace to that pin, and there's a tinned hole for you to take over. And again, you don't have to build both servo amps if you want more IO's. 
+If you don't want to use the A/D (or want to repurpose any other inputs/outputs after you get a board) you can cut the trace to that pin(ehhh. update. not all the traces can be cut. is on hit list for next version), and there's a tinned hole for you to take over. And again, you don't have to build both servo amps if you want more IO's. 
 
 'Firmware' for the rp2040 has some basic configuration and setup instructions in comments at the top of the code. It's pretty well tested and has been running for days without failing on an automower. Open up Arduino ide, install libraries: SimpleFOC, SimpleFOC drivers, and the Earle Philhower rp2040 core, compile and upload to your pico, good to go. Check top of the firmware file (RP2040SFocAmp.ino) for various additional documentation that might help you get started. 
 
@@ -34,7 +34,7 @@ There are two other firmware versions - one example for 3x DC motors, and one ol
 
 **Tested**
 
-Tested using velocity control and torque control up to 10A/21v. You'll want heatsinks and low rdson mosfets to get to 10A. Two boards are running in a Husqvarna 450x Automower as I write this. Maybe 10 hours of operation so far. Will update if/when anything fails. Update: ~100hrs of mowing, 0 servo amp faults/problems. Will still update if/when anything fails.
+Tested using velocity control and torque control up to 10A/21v. You'll want heatsinks and low rdson mosfets to get to 10A. Tested the half-h drivers with igbts and better mosfets on a big inductive load to 60V, will update as we test more. Two boards are running in a Husqvarna 450x Automower as I write this. Maybe 10 hours of operation so far. Will update if/when anything fails. Update: ~100hrs of mowing, 0 servo amp faults/problems. Will still update if/when anything fails.
 
 2 amps, 3 motors. One board has both drive motors, one has the cut motor.
 ![plot](./Installed450x.jpg)
@@ -57,6 +57,7 @@ Thanks to everyone who open sources their work - makes the world a better place.
 - Test both DC and BLDC motors with an encoder instead of halls.
 - Build more robots using this amp.
 - Test it up to 240vdc/10A. Should work?
+- When you disable a moving simplefoc motor with an 'AE0', it'll try to jump back to that velocity when you re-enable it. Might be fixed in newest simplefoc version or maybe it's something I did. Low priority 'cause it just spins a wheel a bit when you re-enable. Could be much a bigger problem on say a robot arm or CNC with a hard stop.
 - Connect JUST the 2304's to a Mesa FPGA board running linuxCNC. Yep. Dump the pico and put your own brain on these drivers.
 - I2C should work via pico pins GP17 and GP16. I think there is also now software CAN for the 2040 - loose 25% or so of one core but get CAN. Should be able to get it working.
 
