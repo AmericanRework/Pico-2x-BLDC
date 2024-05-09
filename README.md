@@ -3,7 +3,7 @@ One RP2040 Pico drives two brushless motors! Uses SimpleFOC + Halls + TO-220 mos
 
 ![plot](./Pico2xBLDCAmp.png)
 
-**Features**
+**Features:**
 
 RP2040 Pico running Simplefoc (https://simplefoc.com/) and using halls (or -untested but should be possible- encoders) for motor commutation. (No FOC - RP2040 doesn't have enough A/D channels for 2x motor FOC.) Current sensing: 1 A/D channel and shunt resistor per motor. Uses 2304 half-H drivers. Can assemble only half the board if you only want one servo amp / want more pico I/O's. Spot for big diodes if you want 'em - Big motors seem to eat my mosfet body diodes rather quickly and IGBT's don't have body diodes. 
 
@@ -41,7 +41,7 @@ Tested using velocity control and torque control up to 10A/21v. You'll want heat
 
 Tested with 3x brushed (non 3 phase) motors using https://github.com/simplefoc/Arduino-FOC-dcmotor  - worked great but I did not test feedback, just that it could spin the motors. Off the top of my head there's only enough pico pins for 2x quadrature encoders.
 
-**Thank you**
+**Thank you:**
 
 Big thank you to https://github.com/ClemensElflein/ for creating the Open Mower project and his very well thought out 3 phase rp2040 servo amp code. His project inspired me to take the leap and make this happen. The original plan was use the openmower framework to control this servo amp, again - the amp plugs right into 450X automower drive motors, no hacking required. This board could(at least used to!) run (a version of?) the Xesc2040 servo amp code. Creating a firmware for this board that allows it to connect to openmower would be cool but I ended up writing a very simple mower controller instead.
 
