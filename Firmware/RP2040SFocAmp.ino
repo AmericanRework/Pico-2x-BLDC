@@ -23,7 +23,7 @@ plug in, check show all devices, look for uf2 devices - may have to select the b
 
 Running it:
   to 'command' use ? to list commands. not that useful. but then you can say "AE0" to disable motor A, AE1 ENABLES. 
-  A10 10 Is like set torqe/velocity goal to 10. YEP. STARTING AT 1 OR EVEN LESS IS A GOOD IDEA.
+  A10: 10 Is like set torqe/velocity goal to 10. YEP. STARTING AT 1 OR EVEN LESS IS A GOOD IDEA.
 
 //commander is set to have some extra methods: I, C, H, and V all do extra stuff we add here. Check out commander.h for more stuff you can do!
 // I is (re)-init. I still can't get init to run a full alignment cycle but can force various override angles? Probably could fix but just never end up using it.
